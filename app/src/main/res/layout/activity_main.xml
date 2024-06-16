@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="20dp"
+    >
+
+
+    <TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+    android:text="@string/kg"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:textColor="#000"
+    />
+
+    <EditText
+        android:id="@+id/etweight"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:inputType="numberDecimal"
+        android:hint="@string/write_weight_here"
+        android:gravity="center"
+        android:textSize="30sp"
+        />
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:text="@string/dcg"
+        android:gravity="center"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        >
+
+
+        <EditText
+            android:id="@+id/fit1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginRight="5dp"
+            android:inputType="numberDecimal"
+            android:hint="Fit"
+            android:gravity="center"
+            android:textSize="25sp"
+            />
+
+        <EditText
+            android:id="@+id/etinch"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:inputType="numberDecimal"
+            android:hint="Inch"
+            android:gravity="center"
+            android:textSize="25sp"
+            />
+
+
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="click here to know BMI"
+        android:textSize="30dp"
+        />
+
+
+    <TextView
+        android:id="@+id/tvdisply"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:textColor="#000000"
+        android:textSize="30sp"
+        android:text=""
+        />
+
+
+
+
+
+
+</LinearLayout>
